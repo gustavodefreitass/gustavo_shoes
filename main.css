@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container header {
+    background-color: #333;
+}
+
+header {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header h1 {
+    margin-left: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#sobre {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.sobre-col {
+    float: left;
+    width: 50%;
+}
+
+.sobre-col h2 {
+    border-bottom: 4px solid #555;
+    padding: 8px;
+}
+
+.sobre-col img {
+    max-width: 90%;
+}
+
+#produtos {
+    padding: 40px 0;
+}
+
+.produto {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#produtos h2{
+    border-bottom: 4px solid #555;
+    padding: 10px;
+}
+
+.produto img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    margin-top: 10px;
+}
+
+.produto p {
+    color: #666;
+}
+
+.produto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+footer p {
+    margin-left: 15px;
+}
+
+.letra {
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+    }
+
+    .sobre-col {
+        width: 100%;
+        float: none;
+    }
+
+    .produto {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: block;
+    }
+
+    .sobre-col {
+        width: 100%;
+        float: none;
+        font-size: 20px;
+    }
+
+    .produto {
+        width: 50%;
+    }
+}
